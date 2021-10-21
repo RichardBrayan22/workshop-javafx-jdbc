@@ -101,7 +101,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 		}
 
 		List<Seller> list = service.findAll();
-		obsList = FXCollections.observableList(list);
+		obsList = FXCollections.observableArrayList(list);
 		tableViewSeller.setItems(obsList);
 		initEditButtons();
 		initRemoveButtons();
